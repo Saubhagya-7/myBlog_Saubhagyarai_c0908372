@@ -1,0 +1,161 @@
+/* Styles for the home page */
+
+/* Reset default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #0c2026;
+    padding: 20px 0;
+    border-bottom: 4px solid #ffcc00;
+}
+
+header h1 {
+    color: #ffcc00;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #fff;
+    font-style: italic;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #0c2026;
+    color: #fff; 
+    padding: 10px 0;
+    clear: both;
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1 {
+    margin-left: 25px;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    margin-inline: 20px;
+    font-size: 16px;
+    color: #fff;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #ffcc00; 
+}
+
+/* Styles for the container */
+.container{
+    display: flex;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/* Main content area styles */
+main {
+    flex: 1;
+    padding: 0 20px;
+}
+
+main h2 {
+    font-size: 28px;
+    color: #0c2026;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main ul {
+    margin-left: 20px;
+}
+
+/* Aside (sidebar) styles */
+aside {
+    width: 20%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+aside h2 {
+    font-size: 20px;
+    color: #0c2026;
+    margin-bottom: 10px;
+}
+
+aside ul li{
+    padding: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #0c2026;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Media Query for responsiveness */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav h1 {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    nav ul li a {
+        margin: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
